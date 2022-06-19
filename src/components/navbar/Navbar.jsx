@@ -6,7 +6,7 @@ import ChatBubbleOutlineOutlinedIcon from '@mui/icons-material/ChatBubbleOutline
 import ListOutlinedIcon from '@mui/icons-material/ListOutlined';
 import NotificationsNoneOutlinedIcon from '@mui/icons-material/NotificationsNoneOutlined';
 
-export const Navbar = () => {
+export const Navbar = (props) => {
   return (
     <div className='navbar'>
       <div className="wrapper">
@@ -19,8 +19,10 @@ export const Navbar = () => {
             <DarkModeOutlinedIcon className='icon' />
           </div>
           <div className="item">
-            <ChatBubbleOutlineOutlinedIcon className='icon' />
+            <button class="btn" onClick={() => props.setChatPopup()}>
+            <ChatBubbleOutlineOutlinedIcon className='icon'/>
             <div className="notifcount">1</div>
+            </button>
           </div>
           <div className="item">
             <NotificationsNoneOutlinedIcon className='icon' />

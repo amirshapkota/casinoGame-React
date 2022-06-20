@@ -13,7 +13,7 @@ import ArticleIcon from '@mui/icons-material/Article';
 import ScaleIcon from '@mui/icons-material/Scale';
 import DocumentScannerIcon from '@mui/icons-material/DocumentScanner';
 
-export const Sidebar = () => {
+export const Sidebar = (props) => {
   return (
     <div className='sidebar'>
         <div className="top">
@@ -53,7 +53,7 @@ export const Sidebar = () => {
               <WifiTetheringIcon className='icon' />
               <span>Refferal</span>
             </li>
-            <li>
+            <li onClick={props.toggleLogin}>
               <AccountCircleOutlinedIcon className='icon' />
               <span>Login/Register</span>
             </li>

@@ -1,0 +1,152 @@
+// body.active-modal {
+//     overflow-y: hidden;
+// }
+
+.btn-modal {
+    padding: 10px 20px;
+    display: block;
+    margin: 100px auto 0;
+    font-size: 18px;
+}
+
+.modal, .overlay {
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    position: fixed;
+}
+
+.overlay {
+    background: rgba(49,49,49,0.8);
+}
+.modal-content {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    line-height: 1.4;
+    background: #f1f1f1;
+    padding: 14px 28px;
+    border-radius: 3px;
+    max-width: 600px;
+    min-width: 300px;
+    border-radius: 5px;
+    width: 400px;
+
+    .center{
+        
+        h1{
+            text-align: center;
+            padding-top: 0 0 20px 0;
+            border-bottom: 1px solid silver;
+        }
+
+        form{
+            padding: 0 40px;
+            box-sizing: border-box;
+
+            .txt_field{
+                position: relative;
+                border-bottom: 2px solid #adadad;
+                margin: 30px 0;
+
+                input{
+                    width: 100%;
+                    padding: 0 5px;
+                    height: 40px;
+                    font-style: 16px;
+                    border: none;
+                    background: none;
+                    outline: none;
+
+                    &:focus ~ label,
+                    &:valid ~ label{
+                        top: -5px;
+                        color: #2691d9;
+                    }
+
+                    &:focus ~ span::before,
+                    &:valid ~ span::before{
+                        width: 100%;
+                    }
+                }
+
+                label{
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    color: #adadad;
+                    transform: translate(-50%);
+                    font-style: 16px;
+                    pointer-events: none;
+                    transition: .5s;
+                }
+
+                span::before{
+                    content: '';
+                    top: 40px;
+                    width: 0%;
+                    height: 2px;
+                    background: #2691d9;
+                    transition: .5s;
+                }
+            }
+        }
+
+        .pass{
+            margin: -5px 0 20px 5px;
+            color: #a6a6a6;
+            cursor: pointer;
+            
+            &:hover{
+                text-decoration: underline;
+            }
+        }
+
+        input[type="submit"]{
+            width: 100%;
+            height: 50px;
+            border: 1px solid;
+            background: #2691d9;
+            border-radius: 25px;
+            font-size: 18px;
+            color: #e9f4fb;
+            font-weight: 700;
+            cursor: pointer;
+            outline: none;
+
+            &:hover{
+                border-color: #2691d9;
+                transition: .5s;
+            }
+        }
+
+        .signup-link{
+            margin: 30px 0;
+            text-align: center;
+            font-size: 16px;
+            color: #666666;
+
+            .p{
+                color: #2691d9;
+                text-decoration: none;
+
+                &:hover{
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+
+}
+
+.close-modal {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    padding: 5px 7px;
+}
+

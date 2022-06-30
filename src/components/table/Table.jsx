@@ -45,14 +45,14 @@ export const List = () => {
 
   return (
     <TableContainer component={Paper} className="table">
-      <Table sx={{ minWidth: 650 }} aria-label="simple table">
+      <Table sx={{ minWidth: 650, "& td, & th": { border: 0 } } } aria-label="simple table" className="tableContainer"> 
         <TableHead>
           <TableRow>
-            <TableCell className='tableCell'>Game</TableCell>
-            <TableCell className='tableCell'>Player</TableCell>
-            <TableCell className='tableCell'>Bet Amount</TableCell>
-            <TableCell className='tableCell'>Won Amount</TableCell>
-            <TableCell className='tableCell'>Profit</TableCell>
+            <TableCell className='tableCell tableHead'>Game</TableCell>
+            <TableCell className='tableCell tableHead'>Player</TableCell>
+            <TableCell className='tableCell tableHead'>Bet Amount</TableCell>
+            <TableCell className='tableCell tableHead'>Won Amount</TableCell>
+            <TableCell className='tableCell tableHead'>Profit</TableCell>
           </TableRow>
         </TableHead>
         <TableBody>

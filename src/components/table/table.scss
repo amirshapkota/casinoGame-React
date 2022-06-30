@@ -1,11 +1,26 @@
 .table{
+    background-color: #232426;
+
+    .tableContainer{
+        background-color: #232426;
+    }
+
+
+    .tableCell{
+        color: #888;
+    }
+
+    .tableHead{
+        color: #fff;
+    }
+    
     .cellWrapper{
         display: flex;
         align-items: center;
 
         .image{
-            width: 32px;
-            height: 32px;
+            width: 20px;
+            height: 20px;
             border-radius: 50%;
             margin-right: 10px;
             object-fit: cover;
@@ -14,10 +29,10 @@
 
     .status{
         padding: 5px;
-        border-radius: 5px;
+        border-radius: 0px;
 
         &.Profit{
-            color: green;
+            color: #39ff13;
         }
 
         &.Loss{

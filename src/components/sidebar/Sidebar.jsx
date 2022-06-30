@@ -17,7 +17,7 @@ export const Sidebar = (props) => {
   return (
     <div className='sidebar'>
         <div className="top">
-          <span className="logo">casinoGame</span>
+          <span className="logo"><img src="./images/logo.png" /></span>
         </div>
         <hr />
         <div className="center">

@@ -11,7 +11,7 @@ export const Navbar = (props) => {
     <div className='navbar'>
       <div className="wrapper">
         <div className="search">
-          <input type="text" placeholder='Search..' />
+          <input type="text" className='searchtext' placeholder='Search..' />
           <SearchIcon />
         </div>
         <div className="items">
@@ -19,10 +19,8 @@ export const Navbar = (props) => {
             <DarkModeOutlinedIcon className='icon' />
           </div>
           <div className="item">
-            <button class="btn" onClick={() => props.setChatPopup()}>
-            <ChatBubbleOutlineOutlinedIcon className='icon'/>
+            <ChatBubbleOutlineOutlinedIcon className='icon' onClick={() => props.setChatPopup()}/>
             <div className="notifcount">1</div>
-            </button>
           </div>
           <div className="item">
             <NotificationsNoneOutlinedIcon className='icon' />
@@ -32,7 +30,7 @@ export const Navbar = (props) => {
             <ListOutlinedIcon className='icon' />
           </div>
           <div className="item">
-            <img src='https://www.pexels.com/photo/stylish-man-in-denim-jacket-12317767/' alt=''
+            <img src='./images/profile.jpeg' alt=''
             className='profilepic' />
           </div>
         </div>

@@ -4,7 +4,10 @@
     display: flex;
     align-items: center;
     font-size: 15px;
-    color: #555;
+    color: #888;
+    background-color: #1e1f21;
+
+    
 
     .wrapper{
         width: 100%;
@@ -16,8 +19,14 @@
         .search{
             display: flex;
             align-items: center;
-            border: 0.5px solid lightgray;
             padding: 3px;
+            border-radius: 12px;
+            color: #888;
+            background-color: #4c4c4c;
+
+            .searchtext{
+                color: #fff;
+            }
 
             input{
                 border: none;
@@ -39,12 +48,6 @@
                 align-items: center;
                 margin-right: 20px;
                 position: relative;
-
-                .btn{
-                    background-color: #fff;
-                    border: none;
-                    cursor: pointer;
-                }
 
             }
 

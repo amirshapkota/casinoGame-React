@@ -30,6 +30,18 @@ export const Widget = ({ type }) => {
         image:"./images/towers.jpg",
       };
       break;
+
+    case "roulette":
+      data={
+        image:"./images/minesweeper.jpg",
+      };
+      break;
+
+    case "plinko":
+      data={
+        image:"./images/plinko.png",
+      };
+      break;
       
       default:
         break;

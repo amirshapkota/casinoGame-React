@@ -11,5 +11,18 @@
             padding: 20px;
             gap: 20px;
         }
+
+        .listContainer{
+            -webkit-box-shadow: 5px 8px 15px 5px rgba(0,0,0,0.2); 
+            box-shadow: 5px 8px 15px 5px rgba(0,0,0,0.2);
+            padding: 20px;
+            margin: 20px;
+
+            .listTitle{
+                font-weight: 500;
+                color: gray;
+                margin-bottom: 15px;
+            }
+        }
     }
 }

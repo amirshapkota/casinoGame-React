@@ -2,36 +2,19 @@
     display: flex;
     justify-content: space-between;
     flex: 1;
-    padding: 10px;
     -webkit-box-shadow: 5px 8px 15px 5px rgba(0,0,0,0.2); 
     box-shadow: 5px 8px 15px 5px rgba(0,0,0,0.2);
     border-radius: 10px;
-    height: 100px;
+    margin-top: 2px;
+    height: 145px;
 }
 
-.left, .right{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+.main{
+    
 
-    .title{
-        font-weight: bold;
-        font-style: 12px;
-        color: rgb(167, 163, 163);
-    }
-
-    .link{
-        font-size: 12px;
-        border-bottom: 1px solid gray;
-        width: max-content;
-    }
-
-    .icon{
-        font-size: 18px;
-        padding: 5px;
-        border-radius: 5px;
-        align-self: flex-end;
-        color: green;
-        background-color: greenyellow;
+    img{
+        height: 100%;
+        width: 100%;
+        border-radius: 10px;
     }
 }

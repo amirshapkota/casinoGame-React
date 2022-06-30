@@ -9,25 +9,25 @@ export const Widget = ({ type }) => {
   switch(type){
     case "crash":
       data={
-        title:"CRASH",
+        image:"./images/crash.jpg",
       };
       break;
 
-    case "spin":
+    case "dice":
       data={
-        title:"SPIN",
+        image:"./images/dice.jpg",
       };
       break;
 
-    case "wheel":
+    case "mines":
       data={
-        title:"WHEEL",
+        image:"./images/mines.jpg",
       };
       break;
 
-    case "lottery":
+    case "towers":
       data={
-        title:"LOTTERY",
+        image:"./images/towers.jpg",
       };
       break;
       
@@ -38,12 +38,8 @@ export const Widget = ({ type }) => {
 
   return (
     <div className='widget'>
-      <div className="left">
-        <span className='title'>{data.title}</span>
-        <span className='link'>Play Now</span>
-      </div>
-      <div className="right">
-        {<PlayCircleFilledWhiteOutlinedIcon  className='icon'/>}
+      <div className="main">
+        <span className='game'><img src={data.image} /></span>
       </div>
     </div>
   )

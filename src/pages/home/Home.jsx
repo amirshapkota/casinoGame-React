@@ -27,9 +27,9 @@ const Home = () => {
                 <Navbar setChatPopup = {changeNavbar} />
                 <div className="widgets">
                     <Widget type="crash" />
-                    <Widget type="spin" />
-                    <Widget type="wheel" />
-                    <Widget type="lottery" />
+                    <Widget type="dice" />
+                    <Widget type="mines" />
+                    <Widget type="towers" />
                 </div>
             </div>
             <Chat trigger={chatPopup} setTrigger = {setChatPopup} />

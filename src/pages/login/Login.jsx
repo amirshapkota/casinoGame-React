@@ -10,12 +10,12 @@ export const Login = () => {
         <Sidebar />
         <div className="newContainer">
             <Navbar />
-            <div className="top">
+            <div className="up">
                 <h1>Register New User</h1>
             </div>
-            <div className="bottom">
+            <div className="down">
                 <div className="left">
-                    <img src="./images/no-image.jpg" alt="" />
+                    <img src="./images/no-image.jpg" alt="" className='regImage'/>
                 </div>
                 <div className="right">
                     <form>

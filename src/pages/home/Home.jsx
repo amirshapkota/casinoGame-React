@@ -4,7 +4,6 @@ import { Sidebar } from "../../components/sidebar/Sidebar";
 import { Navbar } from "../../components/navbar/Navbar";
 import { Widget } from "../../components/widget/Widget";
 import { Chat } from "../../components/chat/Chat";
-import { Login } from "../../components/login/Login";
 import { List } from "../../components/table/Table";
 
 const Home = () => {
@@ -14,16 +13,10 @@ const Home = () => {
         setChatPopup(!chatPopup)
     }
 
-    const [login, setLogin] = useState(false);
-
-    const toggleLogin = () => {
-        setLogin(!login)
-    };
-
 
     return(
         <div className="home">
-            <Sidebar toggleLogin={toggleLogin} />
+            <Sidebar />
             <div className="homeContainer">
                 <Navbar setChatPopup = {changeNavbar} />
                 <div className="widgets">
@@ -42,7 +35,6 @@ const Home = () => {
                 </div>
             </div>
             <Chat trigger={chatPopup} setTrigger = {setChatPopup} />
-            <Login login={login} toggleLogin={toggleLogin} />
         </div>
     )
 }

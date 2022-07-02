@@ -1,6 +1,8 @@
 .new{
     width: 100%;
     display: flex;
+    background-color: #1e1f21;
+
 
     .newContainer{
         flex: 6;
@@ -14,7 +16,7 @@
         display: flex;
 
         h1{
-            color: lightgray;
+            color: #39ff13;
             font-size: 20px;
         }
         
@@ -46,6 +48,8 @@
                         display: flex;
                         align-items: center;
                         gap: 10px;
+                        color: #888;
+
 
                         .icon{
                             cursor: pointer;
@@ -56,7 +60,10 @@
                         width: 100%;
                         padding: 5px;
                         border: none;
-                        border-bottom: 1px solid gray;
+                        outline: none;
+                        background: transparent;
+                        border-bottom: 1px solid #0c8900;
+                        color: #fff;
                     }
                 }
 
@@ -64,11 +71,14 @@
                     width: 150px;
                     padding: 10px;
                     border: none;
-                    background-color: teal;
+                    border-radius: 10px;
+                    background-color: #0c8900;
                     color: white;
                     font-weight: bold;
                     cursor: pointer;
                     margin-top: 10px;
+
+                    
 
                 }
             }

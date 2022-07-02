@@ -43,7 +43,7 @@ export const Login = () => {
                         </div>
                         <div className="formInput">
                             <label>Password</label>
-                            <input type="password" />
+                            <input type="password" placeholder='*****'/>
                         </div>
                         <div className="formInput">
                             <label>Address</label>

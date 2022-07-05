@@ -5,6 +5,7 @@ import { Navbar } from "../../components/navbar/Navbar";
 import { Widget } from "../../components/widget/Widget";
 import { Chat } from "../../components/chat/Chat";
 import { List } from "../../components/table/Table";
+import { Footer } from "../../components/footer/Footer";
 
 const Home = () => {
     const [chatPopup, setChatPopup] = useState(false);
@@ -33,6 +34,7 @@ const Home = () => {
                     <div className="listTitle">Latest Bets</div>
                     <List />
                 </div>
+                <Footer />
             </div>
             <Chat trigger={chatPopup} setTrigger = {setChatPopup} />
         </div>

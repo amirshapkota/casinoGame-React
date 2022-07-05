@@ -2,6 +2,7 @@ import React from 'react'
 import "./login.scss"
 import {Sidebar} from "../../components/sidebar/Sidebar"
 import {Navbar} from "../../components/navbar/Navbar"
+import { Footer } from '../../components/footer/Footer'
 import DriveFolderUploadOutlinedIcon from '@mui/icons-material/DriveFolderUploadOutlined';
 
 export const Login = () => {
@@ -57,6 +58,7 @@ export const Login = () => {
                     </form>
                 </div>
             </div>
+            <Footer />
         </div>
 
     </div>

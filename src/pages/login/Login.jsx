@@ -60,7 +60,6 @@ export const Login = () => {
             </div>
             <Footer />
         </div>
-
     </div>
   )
 }

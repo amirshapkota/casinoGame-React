@@ -8,10 +8,20 @@ export const Footer = () => {
   return (
     <div className='footer'>
         <div className="upContent">
-            <h2>CAS Games</h2>
+            <img src="./images/logo.png" alt="" />
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A inventore praesentium itaque maiores odit voluptate. Distinctio consectetur laudantium repudiandae iste. Nisi quis excepturi corporis ipsa molestiae ea adipisci aperiam esse?</p>
         </div>
         <div className="botContent">
+            <div className="footerList">
+                <h3>Useful Links</h3>
+                <ul>
+                    <li>Home</li>
+                    <li>Promotion</li>
+                    <li>Referral</li>
+                    <li>About</li>
+                    <li>Terms and Conditions</li>
+                </ul>
+            </div>
             <div className="footerList">
                 <h3>Useful Links</h3>
                 <ul>

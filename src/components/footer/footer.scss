@@ -5,7 +5,86 @@
     bottom: 0;
     left: 0;
 
+    .upContent{
+        display: flex;
+
+        img{
+            width: 25%;
+            height: auto;
+        }
+
+
+        p{
+            padding: 33px;
+            justify-content: center;
+            color: #888;
+            font-size: 15px;
+        }
+
+    }
+
     .botContent{
         display: flex;
+        width: 100%;
+        justify-content: center;
+
+
+
+        .footerList{
+
+            align-items: center;
+
+            h3{
+                color: #2bc20e;
+                padding: 10px;
+            }
+
+            ul{
+                list-style: none;
+                margin-bottom: 10%;
+
+
+                li{
+                    color: #888;
+                    margin: 7px;
+                    cursor: pointer;
+                    font-size: 13px;
+
+                    &:hover{
+                        color: #2bc20e;
+                    }
+                }
+            }
+        }
+
+        .socials{
+            margin-left: 10px;
+            border-left: 1px solid #888;
+            margin-bottom: 10px;
+
+            .socialLinks{
+                margin-left: 20px;
+                
+                .socialIcon{
+                    padding: 10px;
+                    color: #888;
+                    font-size: 30px;
+                    cursor: pointer;
+
+                    &:hover{
+                        color: #2bc20e;
+                    }
+                }
+            }
+        }
+    }
+    .copyrightContent{
+        p{
+            padding: 5px;
+            border-top: 1px solid #888 ;
+            font-size: 10px;
+            color: #888;
+            text-align: center;
+        }
     }
 }
